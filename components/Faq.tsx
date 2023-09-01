@@ -9,7 +9,7 @@ export const Faq = () => {
   return (
     <Box mt={32}>
       <HomeSectionTitle title="FAQ" />
-      <Accordion allowToggle>
+      <Accordion allowToggle >
         {faq.map((faqItem, index) => (
           <FaqItem key={index} {...faqItem} />
         ))}

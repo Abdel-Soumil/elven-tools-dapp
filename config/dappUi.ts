@@ -7,9 +7,9 @@ export const dappHostname = process.env.NEXT_PUBLIC_DAPP_HOST;
 
 // HTML metata and og tags, default values for MetaHead.tsx component
 export const defaultMetaTags = {
-  title: 'Elven Tools NFT minter dapp demo - MultiversX blockchain',
+  title: 'We Art Club 3.0 - MultiversX blockchain',
   description:
-    'Open source Dapp template for the Elven Tools and MultiversX blockchain. The actual working example is connected to the Elven Tools smart contract deployed on the MultiversX blockchain devnet!',
+    '3333 NFT pour construire les vetements de demain.',
   image: `${dappHostname}/og-image.png`,
 };
 
@@ -41,28 +41,41 @@ export const faq = [
 // Roadmap section data
 export const roadmap = [
   {
-    title: 'Q1 2023',
+    title: 'Q3 2023',
+    text: 'Genesis et Collection NFT #1',
     points: [
-      'MultiversX rebranding and dependecies replacement',
-      'Nextjs configuration improvements',
-      'Better UI and more functionality',
+      'Lancement de We Art Club',
+      'Introduction de la Collection NFT #1',
+      'Drop NFT #1 - 333 pièces',
     ],
   },
   {
     title: 'Q2 2023',
+    text:'Fusion Matérielle et Numérique',
     points: [
-      'More helpful docs and videos',
-      'More functionality for logged in user',
-      'Automated tests',
+      'Investissement Matériel',
+      'Croissance de la Communauté',
+      'Drop NFT #2 - 1000 pièces',
     ],
   },
   {
     title: 'Q3 2023',
+    text:'Expansion et Continuité',
     points: [
-      'Blog feature implementation',
-      'Backend cache (Redis?)',
-      'Image optimization (Cloudinary?)',
+      'Boutique en Ligne Exclusive',
+      'Affirmation de la Marque',
+      'Drop NFT #3 - 2000 pièces',
       '...sky is the limit!',
+    ],
+    
+  },
+  {
+    title: 'Q3 2023',
+    text:'TEST',
+    points: [
+      'More helpful docs and videos',
+      'More functionality for logged in user',
+      'Automated tests',
     ],
   },
 ];
@@ -71,7 +84,7 @@ export const team = [
   {
     name: 'John Doe',
     bio: 'Web designer and artist',
-    imageUrl: '/john.svg',
+    imageUrl: '/jone.jpg',
     socialMediaLinks: [
       'https://www.twitter.com',
       'https://www.behance.net',
@@ -81,13 +94,13 @@ export const team = [
   {
     name: 'Mark Doe',
     bio: 'Smart Contract programmer',
-    imageUrl: '/mark.svg',
+    imageUrl: '/mark.jpg',
     socialMediaLinks: ['https://www.twitter.com', 'https://www.github.com'],
   },
   {
     name: 'Jack Doe',
     bio: 'Community relations and marketing',
-    imageUrl: '/jack.svg',
+    imageUrl: '/mark1.jpg',
     socialMediaLinks: [
       'https://www.twitter.com',
       'https://www.discord.com',

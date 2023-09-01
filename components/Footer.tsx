@@ -1,16 +1,118 @@
-import { Container, Box, Text, Stack } from '@chakra-ui/react';
-import packageJson from '../package.json';
+import {  Box, Text, Stack } from '@chakra-ui/react';
+import { SocialMediaIcons } from './SocialMediaIcons';
 
 export const Footer = () => {
   return (
     <Box
-      height="120px"
+      height="335px"
       bgColor="elvenTools.dark.darker"
       color="elvenTools.white"
       display="flex"
       alignItems="center"
+      width={"100%"}
+      borderTop={"black 2px solid"}
+      style={{ "background": "linear-gradient(150deg, rgba(0, 0, 0, 0) 23%, black 90%)" }}
     >
-      <Container
+      <Box display={"flex"}
+        flexDirection={"column"}
+        padding={"50px 50px 0 50px"}
+        maxWidth={"1200px"}
+        margin={"auto"}
+        className='footer'
+        width={"100%"}
+      >
+        <Box display={"flex"}
+          flexDirection={"row"}
+          justifyContent={"space-between"}
+          className='footer-container'
+        >
+          <Box display={"flex"}
+            flexDirection={"row"}
+            alignItems={"center"}
+            className='footer-logo-container'
+          >
+            <Box display={"flex"}
+              flexDirection={"row"}
+              alignItems={"center"}
+              className='footer-elrond-container'
+            >
+              <Box as="img" src="/fLogo.png" width={30} height={30} ></Box>
+              <Box fontSize={"20px"} color={"#fff"} padding={"0 30px"}>
+                Made for
+                <br></br>
+                MultiversX with 💙
+              </Box>
+              <Box borderLeft={"2px solid #fff"} height={"70px"}></Box>
+
+            </Box>
+            <Box as="img" src="/logo.png" width={"229px"} height={"150px"} padding={"0 30px"}></Box>
+          </Box>
+          <Box>
+            <Stack
+              direction="column"
+              justifyContent="center"
+              fontSize={"15px"}
+              textAlign={"center"}
+              gap={0}
+            >
+              <Text
+                as="a"
+                color="white"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+
+              >
+                Home
+              </Text>
+              <Text
+                as="a"
+                color="white"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+
+              >
+                About The Club
+              </Text>
+              <Text
+                as="a"
+                color="white"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+
+              >
+                Roadmap
+              </Text>
+              <Text
+                as="a"
+                color="white"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Terms & Conditions
+              </Text>
+            </Stack>
+           <SocialMediaIcons footer={true} />
+          </Box>
+
+        </Box>
+        <Box 
+            fontSize={"14px"}
+            color= {"#fff"}
+            textAlign={"center"}
+            padding= {"30px 0"}
+        >
+        ©{new Date().getFullYear()} We Art Club. All rights reserved.
+
+        </Box>
+
+      </Box >
+
+
+      {/* <Container
         maxW="container.xl"
         fontSize="sm"
         fontWeight="normal"
@@ -78,7 +180,7 @@ export const Footer = () => {
             julian.io
           </Text>
         </Stack>
-      </Container>
-    </Box>
+      </Container> */}
+    </Box >
   );
 };

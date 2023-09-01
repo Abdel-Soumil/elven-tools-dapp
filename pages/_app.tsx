@@ -16,7 +16,10 @@ import { SWRConfig } from 'swr';
 import { useToast } from '@chakra-ui/react';
 import { useCallback } from 'react';
 
+
 const toastId = 'elven-tools-error-toast';
+
+
 
 const ElvenToolsDapp = ({ Component, pageProps }: AppProps) => {
   useNetworkSync({

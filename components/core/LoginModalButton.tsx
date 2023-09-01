@@ -55,9 +55,9 @@ export const LoginModalButton: FC<LoginModalButtonProps> = ({
   return (
     <>
       {isLoggedIn ? (
-        <ActionButton onClick={logout}>Disconnect</ActionButton>
+        <ActionButton onClick={logout} isButton={true}>Disconnect</ActionButton>
       ) : (
-        <ActionButton onClick={open}>Connect</ActionButton>
+        <ActionButton onClick={open} isButton={true}>Connect</ActionButton>
       )}
       <Modal
         isOpen={opened}

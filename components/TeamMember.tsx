@@ -17,11 +17,11 @@ export const TeamMember: FC<TeamMemberProps> = ({
   bio,
 }) => {
   return (
-    <Box>
+    <Box backgroundColor={"black"} paddingTop={10} borderRadius={10}>
       <Box display="flex" alignItems="center" justifyContent="center">
         <Image src={imageUrl} alt={name} width={250} height={250} />
       </Box>
-      <Text textAlign="center" mt={5} fontWeight="bold" fontSize="xl">
+      <Text textAlign="center" color={"#white"} mt={5} fontWeight="bold" fontSize="xl">
         {name}
       </Text>
       {socialMediaLinks && (
@@ -36,14 +36,14 @@ export const TeamMember: FC<TeamMemberProps> = ({
             <SocialIcon
               key={index}
               url={link}
-              bgColor="#fff"
-              style={{ width: 30, height: 30 }}
+              bgColor="white"
+              style={{ width: 40, height: 40 }}
             />
           ))}
         </Box>
       )}
       {bio && (
-        <Text mt={5} textAlign="center">
+        <Text mt={5} textAlign="center" color={"white"}>
           {bio}
         </Text>
       )}
